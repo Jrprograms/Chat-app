@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*Main style*/
+        html {
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+        }
+
+
+        /*Mobile*/
+        @media(max-width:600px) {
+            body {
+                height: 100%;
+                margin: 0;
+                display: flex;
+                justify-content:space-between;
+                flex-direction: column;
+                background-color: rgb(124, 35, 165);
+            }
+            header {
+                height: 8.5vh;
+                background-color: rgba(68, 68, 68, 0.836);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 2.5px solid black;
+            }
+            .header-button{
+                background-color: transparent;
+                color: white;
+                border: none;
+            }
+            #corpo{
+                justify-content: flex-end;
+            }
+            .chat {
+                display: flex;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                height: 165vw;
+                flex-direction: column;
+            }
+
+            .input {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 3.5px;
+            }
+            #message-input {
+                height: 30px;
+                width: 85vw;
+                padding-left: 5px;
+                background-color: transparent;
+                color: white;
+                border: black 2px solid;
+                outline: none;
+            }
+            .message{
+                display: flex;
+                padding: 5px;
+                border-radius: 5px;
+                width: fit-content;
+                color: aliceblue;
+                background-color: rgba(68, 68, 68, 0.836);
+                margin-bottom: 2px;
+            }
+            .my-msgs{
+                align-self: flex-end;
+            }
+            .momento{
+                align-self: flex-end;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 8.5pt;
+                margin-left: 5px;
+            }
+            button#send {
+                margin-right: 4.5px;
+                background-color: transparent;
+                border: black 2px solid;
+            }
+        }
+    </style>
+    <title>Chat</title>
+</head>
+
+<body>
+    <header>
+        <button class="header-button" id="voltar" style="font-size: 20px;margin-right: 7.5px;"> &larr;</button>
+        <div>
+            Perfil do receptor
+        </div>
+    </header>
+    <div class="corpo">
+        <div class="chat">
+        </div>
+        
+        <form class="input">
+            <input type="text" placeholder="Mensagem" id="message-input">
+            <button type="submit" id="send">Enviar</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+    <script>
+        //[] Adicionar alinhamento à direita para que mandou a mensagem
+        //[] Colocar o nome de quem mandou
+
+    </script>
+
+</body>
+
+</html>
