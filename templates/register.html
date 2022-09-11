@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat|Cadastro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        body {
+            background-color: rgb(124, 35, 165);
+            height: 100vh;
+        }
+
+        .header {
+            width: 100%;
+            height: 8.5vh;
+            background-color: rgba(68, 68, 68, 0.836);
+            border-bottom: 2.5px solid black;
+        }
+
+        h1#text {
+            font-weight: bold;
+            font-size: 15pt;
+            padding: 5px;
+            justify-content: center;
+            text-align: center;
+            margin-top: 3vh;
+        }
+
+        #form {
+            width: 80vw;
+            height: 40vh;
+            padding: 5px 8px;
+            margin-top: 5vh;
+            margin-left: 7.5vw;
+            align-self: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            background-color: rgba(0, 0, 0, 0.37);
+            border-radius: 15px;
+        }
+
+        #form h1 {
+            color: rgb(187, 187, 187);
+            font-size: 30pt;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        #form input {
+            padding: 5px;
+            margin-top: 5px;
+            background: none;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid white;
+            color: white;
+        }
+
+        #form input:hover {
+            border-bottom: 3px solid aliceblue;
+        }
+
+        #form input#button {
+            margin-top: 30px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            position: absolute;
+            bottom: 0px;
+            background-color: rgba(68, 68, 68, 0.836);
+            width: 100vw;
+            height: 5vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(187, 187, 187);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            ODJF CHAT
+        </div>
+    </div>
+    
+    <div class="container" id="form">
+        <h1>Cadastre-se</h1>
+        <input type="text" placeholder="Usuario" id="user">
+        <input type="password" placeholder="Senha" id="password">
+        <input type="button" value="Registrar" id="button">
+        <input type="button" value="Já possuo login" id="login">
+    </div>
+
+    <div class="footer container">
+        <p class="Social"><a href="https://www.instagram.com">Instagram<a></p>
+        <p class="Social"><a href="">Github</a></p>
+    </div>
+</body>
+</html>
